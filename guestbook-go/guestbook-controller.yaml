@@ -2,6 +2,8 @@ kind: ReplicationController
 apiVersion: v1
 metadata:
   name: guestbook
+  annotations:
+    argocd.argoproj.io/sync-wave: "0"
   labels:
     app: guestbook
 spec:
